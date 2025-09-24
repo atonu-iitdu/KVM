@@ -38,7 +38,7 @@ BOOT_IMAGE=(hd0,msdos1)/vmlinuz-5.14.0-503.40.1.el9_5.x86_64 root=/dev/mapper/Ku
 
 ---
 
-## 3. Remove `rhgb quiet` Parameters
+## 3. Remove `rhgb quiet` Parameters (from Guest)
 
 ```bash
 # grubby --update-kernel=ALL --remove-args='rhgb quiet'
@@ -60,7 +60,7 @@ This ensures full boot logs are visible on the console.
 
 ---
 
-## 5. Add Serial Console to Kernel Boot Parameters
+## 5. Add Serial Console to Kernel Boot Parameters (from Guest)
 
 Add both VGA (`tty0`) and serial (`ttyS0`) consoles:
 
